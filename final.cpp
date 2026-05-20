@@ -43,3 +43,27 @@ int main() {
         cout << airport.first << " " << airport.second << endl;
 
     cout << endl;
+
+    // Milestone 2
+    int max_count = 0;
+
+    for (auto airport : airports) {
+
+        if (airport.second > max_count)
+            max_count = airport.second;
+    }
+
+    cout << "Busiest airport(s) with count "
+         << max_count << ":" << endl;
+
+    for (auto airport : airports) {
+
+        if (airport.second == max_count)
+            cout << airport.first << " "
+                 << airport.second << endl;
+    }
+
+    cout << endl;
+
+    return 0;
+}
