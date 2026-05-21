@@ -1,7 +1,4 @@
-/*
-    Akashdeep Singh
-    COMSC-210 || Final Part 1
-*/
+// Akashdeep Singh COMSC-210 || Final Part 1
 #include <iostream>
 #include <fstream>
 #include <map>
