@@ -65,5 +65,28 @@ int main() {
 
     cout << endl;
 
+    // Milestone 3
+    print_range(airports, 5, 8);
+
+    cout << endl;
+
+    print_range(airports, 9, 12);
+
     return 0;
+}
+
+void print_range(const map<string, int>& airports,
+                 int low, int high) {
+
+    cout << "Airports with traffic in range ["
+         << low << ", " << high << "]:" << endl;
+
+    for (auto airport : airports) {
+
+        if (airport.second >= low &&
+            airport.second <= high)
+
+            cout << airport.first << " "
+                 << airport.second << endl;
+    }
 }
